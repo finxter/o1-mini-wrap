@@ -13,8 +13,8 @@ st.title("🍓 Trying OpenAI's o1-mini")
 
 # Optional: Add a brief description or instructions
 st.markdown("""
-Welcome to the OpenAI Chat Interface! Below you can find a predefined prompt that you can use. 
-Feel free to copy it using the button provided.
+Welcome to the Finxter Chat Interface for o1-mini! Below you can find a predefined prompt that the previous version GPT-4o cannot solve but this version o1-mini can! 
+Feel free to copy it and try it in the chat. We pay for the API fees!
 """)
 
 # Display the prompt in a text area
@@ -25,21 +25,6 @@ st.text_area(
     max_chars=None,
     key="prompt_text_area"
 )
-
-# Add a copy button if available
-if hasattr(st, "copy_button"):
-    st.copy_button(
-        label="📋 Copy Prompt",
-        data=copy_prompt,
-        mime=None,
-        key="copy_button"
-    )
-else:
-    st.warning(
-        "Streamlit version does not support `st.copy_button`. "
-        "Please update Streamlit or use the manual copy option.",
-        icon="⚠️"
-    )
 
 st.markdown("---")  # Add a horizontal separator for better layout
 
