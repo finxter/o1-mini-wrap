@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 # Show title and description.
-st.title("💬 Chatbot")
+st.title("🍓 Trying OpenAI's o1-mini")
 
 
 # Ask user for their OpenAI API key via `st.text_input`.
